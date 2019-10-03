@@ -1,0 +1,19 @@
+.rating-box {
+  // margin-bottom: 67px;
+}
+
+.separator {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+  }
+}
