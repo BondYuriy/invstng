@@ -1,0 +1,38 @@
+.ad-unit-1-wrapper {
+  background-color: #fdfdfd;
+  padding: 67px 0;
+}
+
+.ad-unit-1 {
+  display: flex;
+  justify-content: space-between;
+
+  & .ad-unit-item {
+    flex: 0 0 49%;
+    height: 251px;
+    overflow: hidden;
+    background-color: #c4c4c4;
+  }
+}
+
+.ad-unit-2-wrapper {
+  background-color: #c4c4c4;
+  height: 420px;
+}
+
+.ad-unit-3-wrapper {
+  padding: 25px 0;
+  background-color: $white;
+}
+
+.ad-unit-3 {
+  display: flex;
+  justify-content: space-between;
+
+  & .ad-unit-item {
+    flex: 0 0 49.5%;
+    height: 151px;
+    overflow: hidden;
+    background-color: #c4c4c4;
+  }
+}

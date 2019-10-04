@@ -60,4 +60,9 @@
   line-height: 16px;
   color: #0fca65;
   border-bottom: 1px dashed #0fca65;
+
+  &:hover {
+    color: #6cb83d;
+    border-bottom: 1px dashed #6cb83d;
+  }
 }

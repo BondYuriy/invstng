@@ -1,0 +1,26 @@
+.stickers {
+  font-weight: normal;
+  font-size: 12px;
+  color: #707070;
+  text-align: center;
+  border-radius: 3px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.sticker-article {
+  width: 62px;
+  height: 19px;
+  background-color: $white;
+  border-left: 2px solid #6cb83d;
+  line-height: 19px;
+}
+
+.sticker-overview {
+  width: 68px;
+  height: 24px;
+  background-color: $white;
+  border-left: 2px solid #ff1f00;
+  line-height: 24px;
+}

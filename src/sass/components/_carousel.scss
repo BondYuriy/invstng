@@ -1,0 +1,101 @@
+.owl-carousel {
+  & .owl-stage-outer {
+    overflow: visible;
+  }
+
+  & .item {
+    opacity: 0;
+  }
+
+  .active .item {
+    opacity: 1;
+  }
+
+  & .owl-nav {
+    width: 54px;
+    height: 34px;
+    border-radius: 50px;
+    background: linear-gradient(109.52deg, #0bd367 16.86%, #0bd3d3 87.76%);
+    box-shadow: 0px 0px 50px rgba(11, 211, 211, 0.5);
+    position: absolute;
+    top: -80px;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    & .owl-prev,
+    .owl-next {
+      width: 27px;
+      height: 34px;
+
+      & span {
+        display: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    & .owl-next {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        display: block;
+        content: "";
+        width: 9px;
+        height: 17px;
+        background-image: url("../img/next-arrow.svg");
+      }
+    }
+
+    & .owl-prev {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        display: block;
+        content: "";
+        width: 9px;
+        height: 17px;
+        background-image: url("../img/prev-arrow.svg");
+      }
+    }
+  }
+
+  & .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    opacity: 0;
+
+    & .owl-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #bebebe;
+      box-shadow: 0px 0px 50px rgba(11, 211, 211, 0.5);
+      margin-right: 6px;
+      transition: 0s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    & .active {
+      width: 6px;
+      height: 6px;
+      background: linear-gradient(101.86deg, #0bd367 16.86%, #0bd3d3 87.76%);
+      box-shadow: 0px 0px 50px rgba(11, 211, 211, 0.5);
+    }
+  }
+}
