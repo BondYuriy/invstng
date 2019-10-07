@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -22,6 +22,7 @@
                   <img src="img/logo.svg" alt="logo">
                 </a>
               </div>
+
               <form action="#" class="search">
                 <input placeholder="Поиск по сайту" type="text">
                 <button type="submit" class="btn-search">
@@ -29,14 +30,14 @@
                 </button>
               </form>
               <div class="user-option">
-                <div class="personal-area">
+                <a href="#" class="personal-area">
                   <img src="img/man-user.svg" alt="icon">
                   <span>Вход</span>
-                </div>
-                <div class="registration">
+                </a>
+                <a href="#" class="registration">
                   <img src="img/key.svg" alt="icon">
                   <span>Регистрация</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -54,6 +55,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav">
+                    <li class="mobile-user-option">
+                      <div class="personal-area">
+                        <img src="img/man-user.svg" alt="icon">
+                        <span>Вход</span>
+                      </div>
+                      <div class="registration">
+                        <img src="img/key.svg" alt="icon">
+                        <span>Регистрация</span>
+                      </div>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Рейтинги брокеров</a>
                       <ul class="sub-nav">
@@ -88,9 +99,9 @@
     <div class="content-box-wrapper">
       <div class="container">
         <div class="row">
-          <div class="col-12 content-box">
-            <p><strong>Популярное</strong></p>
-            <ul>
+          <div class="col-12">
+            <ul class="content-box">
+              <li><strong>Популярное:</strong></li>
               <li><a href="#">Котировка</a></li>
               <li><a href="#">Основные валюты</a></li>
               <li><a href="#">Основные индексы</a></li>
@@ -108,7 +119,7 @@
   <main>
     <div class="container mb-67">
       <div class="row justify-content-between separator">
-        <div class="col-md-5 rating-box">
+        <div class="col-12 col-md-6 col-xl-5 rating-box">
           <div class="title-box">
             <h3 class="title">Рейтинг<strong>Форекс</strong>брокеров</h3>
           </div>
@@ -152,7 +163,7 @@
           </table>
           <a href="#" class="rating-link">Все Форекс брокеры</a>
         </div>
-        <div class="col-md-5 rating-box">
+        <div class="col-12 col-md-6 col-xl-5 rating-box">
           <div class="title-box">
             <h3 class="title">Рейтинг<strong>Бинарных</strong>брокеров</h3>
           </div>
@@ -485,7 +496,7 @@
           <div class="owl-carousel owl-theme news-carousel">
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <img src="img/image-10.jpg" alt="photo">
                   <span class="date">15/07</span>
                 </div>
@@ -500,7 +511,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <img src="img/image-11.jpg" alt="photo">
                   <span class="date">13/07</span>
                 </div>
@@ -515,7 +526,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">05/07</span>
                   <img src="img/image-12.jpg" alt="photo">
                 </div>
@@ -530,7 +541,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">15/07</span>
                   <img src="img/image-10.jpg" alt="photo">
                 </div>
@@ -545,7 +556,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">15/07</span>
                   <img src="img/image-10.jpg" alt="photo">
                 </div>
@@ -560,7 +571,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">15/07</span>
                   <img src="img/image-10.jpg" alt="photo">
                 </div>
@@ -575,7 +586,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">15/07</span>
                   <img src="img/image-10.jpg" alt="photo">
                 </div>
@@ -590,7 +601,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">15/07</span>
                   <img src="img/image-10.jpg" alt="photo">
                 </div>
@@ -605,7 +616,7 @@
             </div>
             <div class="item">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="date">15/07</span>
                   <img src="img/image-10.jpg" alt="photo">
                 </div>
@@ -627,11 +638,11 @@
         <div class="row">
           <div class="col-12 blog-home">
             <div class="title-box">
-              <h3 class="title"><strong>Новости</strong>Форекс брокеров</h3>
+              <h3 class="title">Обзоры<strong>и</strong>статьи</h3>
             </div>
             <div class="blog-overview">
               <a href="#" class="news-card">
-                <div href="#" class="news-card-img">
+                <div class="news-card-img">
                   <span class="stickers sticker-overview">Обзор</span>
                   <img src="img/image-13.jpg" alt="photo">
                 </div>
@@ -648,7 +659,7 @@
             <div class="owl-carousel owl-theme blog-articles">
               <div class="item">
                 <a href="#" class="news-card card-1">
-                  <div href="#" class="news-card-img">
+                  <div class="news-card-img">
                     <span class="stickers sticker-article">Статья</span>
                     <img src="img/image-14.png" alt="photo">
                   </div>
@@ -664,7 +675,7 @@
               </div>
               <div class="item">
                 <a href="#" class="news-card card-2">
-                  <div href="#" class="news-card-img">
+                  <div class="news-card-img">
                     <span class="stickers sticker-article">Статья</span>
                     <img src="img/image-15.jpg" alt="photo">
                   </div>
@@ -679,7 +690,7 @@
               </div>
               <div class="item">
                 <a href="#" class="news-card card-3">
-                  <div href="#" class="news-card-img">
+                  <div class="news-card-img">
                     <span class="stickers sticker-article">Статья</span>
                     <img src="img/image-16.png" alt="photo">
                   </div>
@@ -713,7 +724,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 sub-footer">
-            <ul>
+            <ul class="sub-footer-nav">
               <li><a href="">О нас</a></li>
               <li><a href="">Пользовательское соглашение</a></li>
               <li><a href="">Информация о cookie</a></li>
@@ -746,46 +757,59 @@
       <div class="container">
         <div class="row">
           <div class="col-12 footer">
-            <div class="logo">
-              <a href="index.html">
-                <img src="img/logo.svg" alt="logo">
-              </a>
-            </div>
-            <div class="footer-nav">
-              <ul>
-                <li class="mobile"><a href="#">О нас</a></li>
-                <li><a href="#">Наши правила</a></li>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Уведомления о рисках</a></li>
-                <li class="mobile"><a href="#">Пользовательское соглашение</a></li>
-                <li class="mobile"><a href="#">Информация о cookie</a></li>
-              </ul>
+            <div class="mobile-footer-style">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="img/logo.svg" alt="logo">
+                </a>
+              </div>
+              <div class="footer-nav">
+                <ul>
+                  <li class="mobile"><a href="#">О нас</a></li>
+                  <li><a href="#">Наши правила</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                  <li><a href="#">Уведомления о рисках</a></li>
+                  <li class="mobile"><a href="#">Пользовательское соглашение</a></li>
+                  <li class="mobile"><a href="#">Информация о cookie</a></li>
+                </ul>
+              </div>
             </div>
             <p class="copyright">© 2007-2019 <a href="#">Fusion Media Limited</a>. Все права зарегистрированы. 18+</p>
             <div class="footer-info">
-              <p>Предупреждение о риске: Торговля финансовыми инструментами и (или) криптовалютами сопряжена с высокими
-                рисками, включая риск потери части или всей суммы инвестиций, поэтому подходит не всем инвесторам. Цены
-                на криптовалюты чрезвычайно волатильны и могут изменяться под действием внешних факторов, таких как
-                финансовые новости, законодательные решения или политические события. Маржинальная торговля приводит к
-                повышению финансовых рисков.
-                Прежде чем принимать решение о совершении сделки с финансовым инструментом или криптовалютами, вы должны
-                получить полную информацию о рисках и затратах, связанных с торговлей на финансовых рынках, правильно
-                оценить цели инвестирования, свой опыт и допустимый уровень риска, а при необходимости обратиться за
-                профессиональной консультацией.</p>
-              <p>Fusion Media напоминает, что информация, представленная на этом веб-сайте, не всегда актуальна или
-                точна. Данные и цены на веб-сайте могут быть указаны не официальными представителями рынка или биржи, а
-                рядовыми участниками. Это означает, что цены бывают неточны и могут отличаться от фактических цен на
-                соответствующем рынке, а следовательно, носят ориентировочный характер и не подходят для использования в
-                целях торговли. Fusion Media и любой поставщик данных, содержащихся на этом веб-сайте, отказываются от
-                ответственности за любые потери или убытки, понесенные в результате осуществления торговых сделок,
-                совершенных с оглядкой на указанную информацию.</p>
-              <p>При отсутствии явно выраженного предварительного письменного согласия компании Fusion Media и (или)
-                поставщика данных запрещено использовать, хранить, воспроизводить, отображать, изменять, передавать или
-                распространять данные, содержащиеся на этом веб-сайте. Все права на интеллектуальную собственность
-                сохраняются за поставщиками и (или) биржей, которые предоставили указанные данные.
-                Fusion Media может получать вознаграждение от рекламодателей, упоминаемых на веб-сайте, в случае, если
-                вы перейдете на сайт рекламодателя, свяжитесь с ним или иным образом отреагируете на рекламное
-                объявление.</p>
+              <div class="footer-toggle-box">
+                <p>Предупреждение о риске: Торговля финансовыми инструментами и (или) криптовалютами сопряжена с
+                  высокими
+                  рисками, включая риск потери части или всей суммы инвестиций, поэтому подходит не всем инвесторам.
+                  Цены
+                  на криптовалюты чрезвычайно волатильны и могут изменяться под действием внешних факторов, таких как
+                  финансовые новости, законодательные решения или политические события. Маржинальная торговля приводит к
+                  повышению финансовых рисков.
+                  Прежде чем принимать решение о совершении сделки с финансовым инструментом или криптовалютами, вы
+                  должны
+                  получить полную информацию о рисках и затратах, связанных с торговлей на финансовых рынках, правильно
+                  оценить цели инвестирования, свой опыт и допустимый уровень риска, а при необходимости обратиться за
+                  профессиональной консультацией.</p>
+                <p>Fusion Media напоминает, что информация, представленная на этом веб-сайте, не всегда актуальна или
+                  точна. Данные и цены на веб-сайте могут быть указаны не официальными представителями рынка или биржи,
+                  а
+                  рядовыми участниками. Это означает, что цены бывают неточны и могут отличаться от фактических цен на
+                  соответствующем рынке, а следовательно, носят ориентировочный характер и не подходят для использования
+                  в
+                  целях торговли. Fusion Media и любой поставщик данных, содержащихся на этом веб-сайте, отказываются от
+                  ответственности за любые потери или убытки, понесенные в результате осуществления торговых сделок,
+                  совершенных с оглядкой на указанную информацию.</p>
+                <p>При отсутствии явно выраженного предварительного письменного согласия компании Fusion Media и (или)
+                  поставщика данных запрещено использовать, хранить, воспроизводить, отображать, изменять, передавать
+                  или
+                  распространять данные, содержащиеся на этом веб-сайте. Все права на интеллектуальную собственность
+                  сохраняются за поставщиками и (или) биржей, которые предоставили указанные данные.
+                  Fusion Media может получать вознаграждение от рекламодателей, упоминаемых на веб-сайте, в случае, если
+                  вы перейдете на сайт рекламодателя, свяжитесь с ним или иным образом отреагируете на рекламное
+                  объявление.</p>
+              </div>
+              <div class="footer-btn-toggle">
+                <img src="img/toggle-arrow.svg" alt="icon">
+              </div>
             </div>
           </div>
         </div>

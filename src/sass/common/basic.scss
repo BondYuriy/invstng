@@ -28,3 +28,10 @@ a {
 main {
   overflow: hidden;
 }
+
+input,
+button {
+  &:focus {
+    outline: none;
+  }
+}

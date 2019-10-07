@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
 
-  & ul li a {
+  & .sub-footer-nav li a {
     line-height: 34px;
     color: $black-color;
 
@@ -23,62 +23,53 @@
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  & .mobile-footer-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  & .logo {
-    flex: 0 0 192px;
+    & .logo {
+      flex: 0 0 192px;
 
-    & a {
-      display: block;
-
-      & img {
+      & a {
         display: block;
-        width: 100%;
-        height: auto;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
       }
     }
-  }
 
-  & .footer-nav {
-    flex: 0 0 52%;
+    & .footer-nav {
+      & ul {
+        display: flex;
+        align-items: center;
 
-    & ul {
-      display: flex;
-      align-items: center;
-
-      & li {
-        & a {
-          font-weight: $Regular;
-          font-size: 14px;
-          line-height: 16px;
-          color: $white-color;
-          padding: 0 20px;
-          border-right: 1px solid $white-color;
-
-          &:hover {
-            color: $green-color;
-          }
-        }
-
-        &:nth-last-child(-n + 3) {
+        & li {
           & a {
-            padding-right: 0;
-            border: 0;
+            font-weight: $Regular;
+            font-size: 14px;
+            line-height: 16px;
+            color: $white-color;
+            padding: 0 20px;
+            border-right: 1px solid $white-color;
+
+            &:hover {
+              color: $green-color;
+            }
           }
         }
-      }
 
-      & .mobile {
-        display: none;
+        & .mobile {
+          display: none;
+        }
       }
     }
   }
 
   & .copyright {
-    flex: 0 0 100%;
     font-size: 12px;
     line-height: 14px;
     color: #9d9d9d;
@@ -94,10 +85,27 @@
   }
 
   & .footer-info {
-    flex: 0 0 100%;
     font-size: 12px;
     line-height: 14px;
     color: $white-color;
+    position: relative;
+
+    & .footer-btn-toggle {
+      display: none;
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 0;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     & p {
       margin: 0;

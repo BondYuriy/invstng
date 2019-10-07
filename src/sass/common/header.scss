@@ -89,6 +89,8 @@
 
     & .personal-area,
     .registration {
+      color: $white-color;
+
       & span {
         transition: 0s;
       }
@@ -110,6 +112,7 @@
         position: relative;
 
         & a {
+          display: block;
           padding: 0 54px;
           font-size: 16px;
           line-height: 21px;
@@ -136,10 +139,15 @@
               #0bd3d3 87.76%
             )
             100% 0%;
+          padding: 10px;
 
-          & li a {
-            border: 0;
-            padding: 10px;
+          & li {
+            padding: 0;
+
+            & a {
+              border: 0;
+              padding: 6px 0;
+            }
           }
         }
 
@@ -149,7 +157,7 @@
           }
         }
 
-        &:first-child {
+        &:nth-child(2) {
           & a {
             padding: 0 54px 0 0;
           }
@@ -162,6 +170,24 @@
           }
         }
       }
+
+      & .mobile-user-option {
+        display: none;
+        padding: 0;
+
+        & .personal-area,
+        .registration {
+          color: $white-color;
+
+          & span {
+            transition: 0s;
+          }
+
+          &:hover {
+            color: $green-color;
+          }
+        }
+      }
     }
   }
 }
@@ -169,38 +195,33 @@
 .content-box {
   display: flex;
   align-items: center;
-  padding: 14px 15px;
+  padding: 14px 0;
 
-  & p {
-    margin: 0 20px 0 0;
-  }
+  & li {
+    & strong {
+      font-style: $Regular;
+      font-weight: $Medium;
+      font-size: 14px;
+      line-height: 16px;
+      color: #525252;
+    }
 
-  & ul {
-    display: flex;
-    align-items: center;
+    & a {
+      display: block;
+      padding: 0 20px;
+      color: #525252;
+      border-right: 1px solid #9d9d9d;
+      line-height: 16px;
 
-    & li {
+      &:hover {
+        color: $green-color;
+      }
+    }
+
+    &:last-child {
       & a {
-        padding: 0 21px;
-        color: #525252;
-        border-right: 1px solid #474747;
-
-        &:hover {
-          color: $green-color;
-        }
-      }
-
-      &:first-child {
-        & a {
-          padding: 0 21px 0 0;
-        }
-      }
-
-      &:last-child {
-        & a {
-          padding: 0 0 0 21px;
-          border: 0;
-        }
+        padding: 0 0 0 21px;
+        border: 0;
       }
     }
   }

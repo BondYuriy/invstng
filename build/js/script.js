@@ -3,16 +3,17 @@ $(document).ready(function() {
 
   $(".feedback-carousel").owlCarousel({
     loop: true,
-    margin: 100,
+    margin: 15,
     nav: true,
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        margin: 10
       },
-      600: {
-        items: 3
+      768: {
+        items: 2
       },
-      1200: {
+      992: {
         items: 3
       }
     }
@@ -24,12 +25,13 @@ $(document).ready(function() {
     nav: true,
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        margin: 15
       },
-      600: {
-        items: 3
+      768: {
+        items: 2
       },
-      1200: {
+      992: {
         items: 3
       }
     }
@@ -43,14 +45,14 @@ $(document).ready(function() {
       0: {
         items: 1
       },
-      576: {
-        items: 1,
+      768: {
+        items: 2,
         nav: true,
         singleItem: true,
         mouseDrag: true,
         touchDrag: true
       },
-      600: {
+      992: {
         items: 0,
         nav: false,
         loop: false,
@@ -59,5 +61,13 @@ $(document).ready(function() {
         touchDrag: false
       }
     }
+  });
+
+  /* */
+
+  $(".footer-btn-toggle").click(function() {
+    $(this)
+      .prev(".footer-toggle-box")
+      .toggleClass("show");
   });
 });
