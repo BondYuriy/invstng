@@ -763,6 +763,10 @@ button:focus {
 	text-align: center;
 }
 
+.table tr td a {
+	display: block;
+}
+
 .table tr td a img {
 	display: block;
 	height: 100%;
@@ -1224,6 +1228,173 @@ button:focus {
 	opacity: 1;
 }
 
+.table-rating-box {
+	display: flex;
+}
+
+.table-rating-box .table-rating-main,
+.table-rating-box .table-rating-info {
+	font-size: 18px;
+	color: #393939;
+}
+
+.table-rating-box .table-rating-main tr,
+.table-rating-box .table-rating-info tr {
+	height: 60px !important;
+	padding: 10px 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.table-rating-box .table-rating-main tr:last-child,
+.table-rating-box .table-rating-info tr:last-child {
+	border: 0;
+}
+
+.table-rating-box .table-rating-main tr:last-child,
+.table-rating-box .table-rating-info tr:last-child {
+	border: 0;
+}
+
+.table-rating-box .table-rating-main th,
+.table-rating-box .table-rating-info th {
+	border: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #8f8f8f;
+	padding: 0 5px;
+}
+
+.table-rating-box .table-rating-main td,
+.table-rating-box .table-rating-info td {
+	vertical-align: middle;
+	height: 60px !important;
+	text-align: center;
+	padding: 0 5px;
+}
+
+.table-rating-box .table-rating-main td a,
+.table-rating-box .table-rating-info td a {
+	display: block;
+}
+
+.table-rating-box .table-rating-main td a img,
+.table-rating-box .table-rating-info td a img {
+	display: block;
+	height: 100%;
+	margin: auto;
+}
+
+.table-rating-box .table-rating-main {
+	flex: 0 0 20%;
+}
+
+.table-rating-box .table-rating-main:first-child {
+	padding-left: 0;
+	font-weight: 700;
+	font-size: 18px;
+	color: #8f8f8f;
+}
+
+.table-rating-box .table-rating-info {
+	flex: 0 0 80%;
+}
+
+.table-rating-box .table-rating-info table {
+	width: 100%;
+}
+
+.table-rating-box .table-rating-info table tr td:first-child {
+	padding-left: 20px;
+}
+
+.table-rating-box .table-rating-info table .name {
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: left;
+	margin-bottom: 6px;
+}
+
+.table-rating-box .table-rating-info table .checkbox-box {
+	display: flex;
+	align-items: center;
+	min-width: 100px;
+}
+
+.table-rating-box .table-rating-info table .checkbox-box input[type="checkbox"] {
+	border: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	margin: 0;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	transition: all 0.15s ease-out 0s;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #afafaf;
+	border-radius: 3px;
+}
+
+.table-rating-box .table-rating-info table .checkbox-box input[type="checkbox"]:checked::before {
+	display: inline-block;
+	content: "";
+	height: 13px;
+	width: 13px;
+	position: absolute;
+	left: 2px;
+	bottom: 0;
+	background-image: url("../img/tick.svg");
+}
+
+.table-rating-box .table-rating-info table .checkbox-box input[type="checkbox"]:checked + label {
+	color: #0fca65;
+	border-bottom: 1px dashed #0fca65;
+	font-weight: 700;
+}
+
+.table-rating-box .table-rating-info table .checkbox-box label {
+	margin: 0;
+	font-size: 12px;
+	line-height: 12px;
+	color: #a3a3a3;
+	margin-left: 7px;
+	border-bottom: 1px solid #fff;
+	transition: 0s;
+}
+
+.table-rating-box .table-rating-info table .table-review-1 {
+	color: #6cb83d;
+	margin-right: 5px;
+}
+
+.table-rating-box .table-rating-info table .table-review-3 {
+	color: #d51538;
+	margin-left: 5px;
+}
+
+.table-rating-box .table-rating-info table .table-review-link {
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	color: #0fca65;
+	border-bottom: 1px dashed #0fca65;
+}
+
+.table-rating-box .table-rating-info table .regulator {
+	min-width: 120px;
+	font-size: 14px;
+}
+
 /* header */
 
 /* ad-unit */
@@ -1241,6 +1412,8 @@ button:focus {
 /* title-box */
 
 /* home page */
+
+/* table-rating-box */
 
 @media (min-width: 768px) {
 
@@ -1566,6 +1739,16 @@ button:focus {
 	padding-bottom: 5px;
 }
 
+.table-rating-box .table-rating-main {
+	box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.02);
+}
+
+.table-rating-box .table-rating-info {
+	flex: 0 0 330px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
 }
 
 @media (max-width: 575px) {
@@ -1759,6 +1942,92 @@ button:focus {
 .blog-home .blog-articles .news-card .news-card-img {
 	width: 100%;
 	height: auto;
+}
+
+.table-rating-box .table-rating-main,
+.table-rating-box .table-rating-info {
+	font-size: 14px;
+	color: #393939;
+}
+
+.table-rating-box .table-rating-main tr,
+.table-rating-box .table-rating-info tr {
+	height: 45px !important;
+	padding: 7px 0;
+}
+
+.table-rating-box .table-rating-main th,
+.table-rating-box .table-rating-info th {
+	font-size: 14px;
+	text-align: left;
+}
+
+.table-rating-box .table-rating-main td,
+.table-rating-box .table-rating-info td {
+	height: 45px !important;
+	padding: 0 3px;
+}
+
+.table-rating-box .table-rating-main td a,
+.table-rating-box .table-rating-info td a {
+	display: block;
+	max-height: 45px;
+	height: 100%;
+}
+
+.table-rating-box .table-rating-main td a img,
+.table-rating-box .table-rating-info td a img {
+	display: block;
+	height: 42px;
+	margin: auto;
+}
+
+.table-rating-box .table-rating-main {
+	flex: 0 0 50%;
+}
+
+.table-rating-box .table-rating-main:first-child {
+	font-size: 14px;
+}
+
+.table-rating-box .table-rating-info {
+	flex: 0 0 53%;
+}
+
+.table-rating-box .table-rating-info table {
+	width: 100%;
+}
+
+.table-rating-box .table-rating-info table tr td:first-child,
+.table-rating-box .table-rating-info table tr th:first-child {
+	padding-left: 20px;
+}
+
+.table-rating-box .table-rating-info table .name {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.table-rating-box .table-rating-info table .table-review-link {
+	height: auto;
+}
+
+.table-rating-box .table-rating-info table .regulator {
+	font-size: 12px;
+}
+
+.table-rating-box .table-rating-info::-webkit-scrollbar-track {
+	background-color: rgba(202, 212, 229, 0.27) !important;
+}
+
+.table-rating-box .table-rating-info::-webkit-scrollbar {
+	height: 2px !important;
+	background-color: #e3e3e3 !important;
+}
+
+.table-rating-box .table-rating-info::-webkit-scrollbar-thumb {
+	height: 2px !important;
+	background-color: #c6c6c6 !important;
 }
 
 }

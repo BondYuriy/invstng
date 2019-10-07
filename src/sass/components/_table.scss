@@ -22,10 +22,14 @@
       height: 60px;
       text-align: center;
 
-      & a img {
+      & a {
         display: block;
-        height: 100%;
-        margin: auto;
+
+        & img {
+          display: block;
+          height: 100%;
+          margin: auto;
+        }
       }
 
       &:first-child {
