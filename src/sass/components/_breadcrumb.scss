@@ -1,0 +1,25 @@
+.breadcrumb-box {
+  padding: 29px 0 60px 0;
+
+  & .breadcrumb {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+
+    & li,
+    li a {
+      font-size: 16px;
+      color: #8f8f8f;
+    }
+
+    & li a:hover {
+      color: $green-color;
+    }
+
+    & .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      color: #6c757d;
+      content: "|";
+    }
+  }
+}

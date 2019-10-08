@@ -233,6 +233,21 @@
   }
 }
 
+/* breadcrumb-box */
+
+@media (max-width: 575px) {
+  .breadcrumb-box {
+    padding: 12px 0 20px 0;
+
+    & .breadcrumb {
+      & li,
+      li a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 /* carousel */
 
 @media (max-width: 575px) {
@@ -589,23 +604,54 @@
   }
 }
 
-/* table-rating-box */
+/* rating page */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .table-rating-box {
     & .table-rating-main {
+      flex: 0 0 35%;
       box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.02);
     }
 
     & .table-rating-info {
-      flex: 0 0 330px;
+      flex: 0 0 65%;
       overflow-x: scroll;
       overflow-y: hidden;
+
+      &::-webkit-scrollbar-track {
+        background-color: rgba(202, 212, 229, 0.27) !important;
+      }
+
+      &::-webkit-scrollbar {
+        height: 2px !important;
+        background-color: #e3e3e3 !important;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        height: 2px !important;
+        background-color: #c6c6c6 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .table-rating-box {
+    & .table-rating-info {
+      flex: 0 0 330px;
     }
   }
 }
 
 @media (max-width: 575px) {
+  .header {
+    margin: 0;
+
+    & .content-box-wrapper {
+      background-color: #fff;
+    }
+  }
+
   .table-rating-box {
     & .table-rating-main,
     .table-rating-info {
@@ -613,7 +659,7 @@
       color: #393939;
 
       & tr {
-        height: 45px !important;
+        height: 44px !important;
         padding: 7px 0;
       }
 
@@ -623,17 +669,17 @@
       }
 
       & td {
-        height: 45px !important;
+        height: 44px !important;
         padding: 0 3px;
 
         & a {
           display: block;
-          max-height: 45px;
+          max-height: 44px;
           height: 100%;
 
           & img {
             display: block;
-            height: 42px;
+            height: 38px;
             margin: auto;
           }
         }
@@ -641,7 +687,7 @@
     }
 
     & .table-rating-main {
-      flex: 0 0 50%;
+      flex: 0 0 45%;
 
       &:first-child {
         font-size: 14px;
@@ -649,7 +695,7 @@
     }
 
     & .table-rating-info {
-      flex: 0 0 53%;
+      flex: 0 0 55%;
 
       & table {
         width: 100%;
@@ -673,20 +719,6 @@
         & .regulator {
           font-size: 12px;
         }
-      }
-
-      &::-webkit-scrollbar-track {
-        background-color: rgba(202, 212, 229, 0.27) !important;
-      }
-
-      &::-webkit-scrollbar {
-        height: 2px !important;
-        background-color: #e3e3e3 !important;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        height: 2px !important;
-        background-color: #c6c6c6 !important;
       }
     }
   }

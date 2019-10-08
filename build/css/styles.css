@@ -1169,6 +1169,32 @@ button:focus {
 	opacity: 0.7;
 }
 
+.breadcrumb-box {
+	padding: 29px 0 60px 0;
+}
+
+.breadcrumb-box .breadcrumb {
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.breadcrumb-box .breadcrumb li,
+.breadcrumb-box .breadcrumb li a {
+	font-size: 16px;
+	color: #8f8f8f;
+}
+
+.breadcrumb-box .breadcrumb li a:hover {
+	color: #6cb83d;
+}
+
+.breadcrumb-box .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+	display: inline-block;
+	padding-right: 0.5rem;
+	color: #6c757d;
+	content: "|";
+}
+
 .separator {
 	position: relative;
 }
@@ -1228,8 +1254,17 @@ button:focus {
 	opacity: 1;
 }
 
+.header {
+	margin: 0;
+}
+
+.header .content-box-wrapper {
+	background-color: #fafafa;
+}
+
 .table-rating-box {
 	display: flex;
+	padding-bottom: 55px;
 }
 
 .table-rating-box .table-rating-main,
@@ -1383,6 +1418,8 @@ button:focus {
 
 .table-rating-box .table-rating-info table .table-review-link {
 	display: block;
+	width: 50px;
+	margin: auto;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 14px;
@@ -1399,6 +1436,8 @@ button:focus {
 
 /* ad-unit */
 
+/* breadcrumb-box */
+
 /* carousel */
 
 /* feedback-card */
@@ -1413,7 +1452,7 @@ button:focus {
 
 /* home page */
 
-/* table-rating-box */
+/* rating page */
 
 @media (min-width: 768px) {
 
@@ -1644,6 +1683,31 @@ button:focus {
 	width: 100%;
 }
 
+.table-rating-box .table-rating-main {
+	flex: 0 0 35%;
+	box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.02);
+}
+
+.table-rating-box .table-rating-info {
+	flex: 0 0 65%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.table-rating-box .table-rating-info::-webkit-scrollbar-track {
+	background-color: rgba(202, 212, 229, 0.27) !important;
+}
+
+.table-rating-box .table-rating-info::-webkit-scrollbar {
+	height: 2px !important;
+	background-color: #e3e3e3 !important;
+}
+
+.table-rating-box .table-rating-info::-webkit-scrollbar-thumb {
+	height: 2px !important;
+	background-color: #c6c6c6 !important;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -1739,14 +1803,8 @@ button:focus {
 	padding-bottom: 5px;
 }
 
-.table-rating-box .table-rating-main {
-	box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.02);
-}
-
 .table-rating-box .table-rating-info {
 	flex: 0 0 330px;
-	overflow-x: scroll;
-	overflow-y: hidden;
 }
 
 }
@@ -1816,6 +1874,15 @@ button:focus {
 
 .ad-unit-3 .ad-unit-item:last-child {
 	margin-bottom: 0;
+}
+
+.breadcrumb-box {
+	padding: 12px 0 20px 0;
+}
+
+.breadcrumb-box .breadcrumb li,
+.breadcrumb-box .breadcrumb li a {
+	font-size: 12px;
 }
 
 .owl-carousel {
@@ -1944,6 +2011,14 @@ button:focus {
 	height: auto;
 }
 
+.header {
+	margin: 0;
+}
+
+.header .content-box-wrapper {
+	background-color: #fff;
+}
+
 .table-rating-box .table-rating-main,
 .table-rating-box .table-rating-info {
 	font-size: 14px;
@@ -1952,7 +2027,7 @@ button:focus {
 
 .table-rating-box .table-rating-main tr,
 .table-rating-box .table-rating-info tr {
-	height: 45px !important;
+	height: 44px !important;
 	padding: 7px 0;
 }
 
@@ -1964,26 +2039,26 @@ button:focus {
 
 .table-rating-box .table-rating-main td,
 .table-rating-box .table-rating-info td {
-	height: 45px !important;
+	height: 44px !important;
 	padding: 0 3px;
 }
 
 .table-rating-box .table-rating-main td a,
 .table-rating-box .table-rating-info td a {
 	display: block;
-	max-height: 45px;
+	max-height: 44px;
 	height: 100%;
 }
 
 .table-rating-box .table-rating-main td a img,
 .table-rating-box .table-rating-info td a img {
 	display: block;
-	height: 42px;
+	height: 38px;
 	margin: auto;
 }
 
 .table-rating-box .table-rating-main {
-	flex: 0 0 50%;
+	flex: 0 0 45%;
 }
 
 .table-rating-box .table-rating-main:first-child {
@@ -1991,7 +2066,7 @@ button:focus {
 }
 
 .table-rating-box .table-rating-info {
-	flex: 0 0 53%;
+	flex: 0 0 55%;
 }
 
 .table-rating-box .table-rating-info table {
@@ -2014,20 +2089,6 @@ button:focus {
 
 .table-rating-box .table-rating-info table .regulator {
 	font-size: 12px;
-}
-
-.table-rating-box .table-rating-info::-webkit-scrollbar-track {
-	background-color: rgba(202, 212, 229, 0.27) !important;
-}
-
-.table-rating-box .table-rating-info::-webkit-scrollbar {
-	height: 2px !important;
-	background-color: #e3e3e3 !important;
-}
-
-.table-rating-box .table-rating-info::-webkit-scrollbar-thumb {
-	height: 2px !important;
-	background-color: #c6c6c6 !important;
 }
 
 }
