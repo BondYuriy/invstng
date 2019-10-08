@@ -606,6 +606,20 @@
 
 /* rating page */
 
+@media (max-width: 1199px) {
+  .black-list-style {
+    background-color: #fff;
+
+    & .table-rating-main {
+      flex: 0 0 27%;
+    }
+
+    & .table-rating-info {
+      flex: 0 0 73%;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .table-rating-box {
     & .table-rating-main {
@@ -639,6 +653,16 @@
   .table-rating-box {
     & .table-rating-info {
       flex: 0 0 330px;
+    }
+  }
+
+  .black-list-style {
+    & .table-rating-main {
+      flex: 0 0 50%;
+    }
+
+    & .table-rating-info {
+      flex: 0 0 50%;
     }
   }
 }
@@ -720,6 +744,28 @@
           font-size: 12px;
         }
       }
+    }
+  }
+
+  .black-list-style {
+    & .table-rating-main {
+      flex: 0 0 55%;
+
+      & td:first-child {
+        padding: 0;
+        width: 30px !important;
+
+        & img {
+          margin: 0;
+          display: block;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    & .table-rating-info {
+      flex: 0 0 45%;
     }
   }
 }

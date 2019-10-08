@@ -226,3 +226,11 @@
     }
   }
 }
+
+.page-style {
+  margin: 0;
+
+  & .content-box-wrapper {
+    background-color: #fafafa;
+  }
+}

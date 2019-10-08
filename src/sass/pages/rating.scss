@@ -1,11 +1,3 @@
-.header {
-  margin: 0;
-
-  & .content-box-wrapper {
-    background-color: #fafafa;
-  }
-}
-
 .table-rating-box {
   display: flex;
   padding-bottom: 55px;
@@ -41,6 +33,7 @@
     }
 
     & td {
+      // min-width: 30px;
       vertical-align: middle;
       height: 60px !important;
       text-align: center;
@@ -168,5 +161,17 @@
         font-size: 14px;
       }
     }
+  }
+}
+
+.black-list-style {
+  background-color: #f9f9f9;
+
+  & .table-rating-main {
+    flex: 0 0 23%;
+  }
+
+  & .table-rating-info {
+    flex: 0 0 77%;
   }
 }

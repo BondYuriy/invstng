@@ -572,6 +572,14 @@ button:focus {
 	border: 0;
 }
 
+.page-style {
+	margin: 0;
+}
+
+.page-style .content-box-wrapper {
+	background-color: #fafafa;
+}
+
 .sub-footer-wrapper {
 	padding: 43px 0;
 	background-color: #f9f9f9;
@@ -708,12 +716,21 @@ button:focus {
 }
 
 .title-box {
-	display: flex;
-	align-items: center;
 	padding-bottom: 40px;
 }
 
-.title-box::before {
+.title-box .title {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000;
+}
+
+.title-box .title::before {
 	display: block;
 	content: "";
 	width: 3px;
@@ -723,17 +740,17 @@ button:focus {
 	margin-right: 13px;
 }
 
-.title-box .title {
-	margin: 0;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	color: #000;
-}
-
 .title-box .title strong {
 	color: #6cb83d;
 	margin: 0 7px;
+}
+
+.title-box .title .red-style {
+	color: #ff1f00;
+}
+
+.title-box .title img {
+	margin-left: 12px;
 }
 
 .table {
@@ -1254,14 +1271,6 @@ button:focus {
 	opacity: 1;
 }
 
-.header {
-	margin: 0;
-}
-
-.header .content-box-wrapper {
-	background-color: #fafafa;
-}
-
 .table-rating-box {
 	display: flex;
 	padding-bottom: 55px;
@@ -1432,6 +1441,18 @@ button:focus {
 	font-size: 14px;
 }
 
+.black-list-style {
+	background-color: #f9f9f9;
+}
+
+.black-list-style .table-rating-main {
+	flex: 0 0 23%;
+}
+
+.black-list-style .table-rating-info {
+	flex: 0 0 77%;
+}
+
 /* header */
 
 /* ad-unit */
@@ -1527,6 +1548,18 @@ button:focus {
 
 .blog-home .blog-articles .news-card {
 	width: 540px;
+}
+
+.black-list-style {
+	background-color: #fff;
+}
+
+.black-list-style .table-rating-main {
+	flex: 0 0 27%;
+}
+
+.black-list-style .table-rating-info {
+	flex: 0 0 73%;
 }
 
 }
@@ -1805,6 +1838,14 @@ button:focus {
 
 .table-rating-box .table-rating-info {
 	flex: 0 0 330px;
+}
+
+.black-list-style .table-rating-main {
+	flex: 0 0 50%;
+}
+
+.black-list-style .table-rating-info {
+	flex: 0 0 50%;
 }
 
 }
@@ -2089,6 +2130,26 @@ button:focus {
 
 .table-rating-box .table-rating-info table .regulator {
 	font-size: 12px;
+}
+
+.black-list-style .table-rating-main {
+	flex: 0 0 55%;
+}
+
+.black-list-style .table-rating-main td:first-child {
+	padding: 0;
+	width: 30px !important;
+}
+
+.black-list-style .table-rating-main td:first-child img {
+	margin: 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+
+.black-list-style .table-rating-info {
+	flex: 0 0 45%;
 }
 
 }
