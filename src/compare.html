@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="header page-style">
+    <div class="header-main-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-main">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="img/logo.svg" alt="logo" />
+                </a>
+              </div>
+
+              <form action="#" class="search">
+                <input placeholder="Поиск по сайту" type="text" />
+                <button type="submit" class="btn-search">
+                  <img src="img/search.svg" alt="icon">
+                </button>
+              </form>
+              <div class="user-option">
+                <a href="#" class="personal-area">
+                  <img src="img/man-user.svg" alt="icon">
+                  <span>Вход</span>
+                </a>
+                <a href="#" class="registration">
+                  <img src="img/key.svg" alt="icon">
+                  <span>Регистрация</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="navigations">
+              <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav">
+                    <li class="mobile-user-option">
+                      <div class="personal-area">
+                        <img src="img/man-user.svg" alt="icon">
+                        <span>Вход</span>
+                      </div>
+                      <div class="registration">
+                        <img src="img/key.svg" alt="icon">
+                        <span>Регистрация</span>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Рейтинги брокеров</a>
+                      <ul class="sub-nav">
+                        <li>
+                          <a href="rating.html">Форекс брокеры</a>
+                        </li>
+                        <li>
+                          <a href="#">Бинарные брокеры</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Черные списки брокеров</a>
+                      <ul class="sub-nav">
+                        <li>
+                          <a href="black-list.html">Черные списки Форекс брокеров</a>
+                        </li>
+                        <li>
+                          <a href="#">Черные списки Бинарныx брокеров</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Сравнение брокеров</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Обзоры и статьи</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-box-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="content-box">
+              <li><strong>Популярное:</strong></li>
+              <li><a href="#">Котировка</a></li>
+              <li><a href="#">Основные валюты</a></li>
+              <li><a href="#">Основные индексы</a></li>
+              <li><a href="#">Фьючерсы</a></li>
+              <li><a href="#">Биржевые товары</a></li>
+              <li><a href="#">Вебинары</a></li>
+              <li><a href="#">Экономический календарь</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb" class="breadcrumb-box">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Сравнение</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="title-box">
+            <h3 class="title"><strong>Сравнение</strong>брокеров</h3>
+          </div>
+          <div class="compare-box">
+            <table class="table-compare-main">
+              <tr>
+                <th>
+                  <select>
+                    <option selected>Добавить к сравнению</option>
+                    <option>...</option>
+                    <option>...</option>
+                    <option>...</option>
+                  </select>
+                </th>
+              </tr>
+              <tr>
+                <td>Минимальный лот</td>
+              </tr>
+              <tr>
+                <td>Минимальное торговое плечо</td>
+              </tr>
+              <tr>
+                <td>Максимальное торговое плечо</td>
+              </tr>
+              <tr>
+                <td>Уровен Margin Call/Stop Out</td>
+              </tr>
+              <tr>
+                <td>Знаков после запятой</td>
+              </tr>
+              <tr>
+                <td>Минимальный депозит</td>
+              </tr>
+              <tr>
+                <td>Спреды</td>
+              </tr>
+              <tr>
+                <td>Типы счетов</td>
+              </tr>
+              <tr>
+                <td>Начисление % на депозит</td>
+              </tr>
+              <tr>
+                <td>Регулирующая организация</td>
+              </tr>
+              <tr>
+                <td>Инвестиционные пограммы</td>
+              </tr>
+              <tr>
+                <td>Торговые инструменты</td>
+              </tr>
+              <tr>
+                <td>Исполнение ордеров</td>
+              </tr>
+              <tr>
+                <td>Торговая платформа</td>
+              </tr>
+              <tr>
+                <td>Сегрегированные счета</td>
+              </tr>
+              <tr>
+                <td>Наличие ECN счетов</td>
+              </tr>
+              <tr>
+                <td>Наличие микро/мини счетов</td>
+              </tr>
+              <tr>
+                <td>Пополнение без комиссии</td>
+              </tr>
+              <tr>
+                <td>Вывод средств без комиссии</td>
+              </tr>
+              <tr>
+                <td>Бонусы для трейдеров</td>
+              </tr>
+              <tr>
+                <td>Конкурсы</td>
+              </tr>
+              <tr>
+                <td>Партнерская программа</td>
+              </tr>
+              <tr>
+                <td>Платформа для IPHONE</td>
+              </tr>
+              <tr>
+                <td>Платформа для Android</td>
+              </tr>
+              <tr>
+                <td>Платформа для Windows Mobile</td>
+              </tr>
+              <tr>
+                <td>Торговля криптовалютами</td>
+              </tr>
+              <tr>
+                <td>Счета Swap-Free</td>
+              </tr>
+              <tr>
+                <td>Торговля CFD</td>
+              </tr>
+              <tr>
+                <td>Разрешен скальпинг</td>
+              </tr>
+              <tr>
+                <td>Платежные системы для вывода</td>
+              </tr>
+              <tr>
+                <td>Платежные системы для ввода</td>
+              </tr>
+              <tr>
+                <td>Год основания</td>
+              </tr>
+              <tr>
+                <td>Официальный сайт</td>
+              </tr>
+              <tr>
+                <td>Рейтинг</td>
+              </tr>
+            </table>
+            <div class="table-compare-info-box">
+              <div class="table-compare-info">
+                <table>
+                  <tr>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ad-unit-3-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ad-unit-3">
+            <div class="ad-unit-item"></div>
+            <div class="ad-unit-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="sub-footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 sub-footer">
+            <ul class="sub-footer-nav">
+              <li><a href="">О нас</a></li>
+              <li><a href="">Пользовательское соглашение</a></li>
+              <li><a href="">Информация о cookie</a></li>
+            </ul>
+            <div class="social">
+              <h3 class="title">Мы в соцсетях</h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/telegram.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/twitter.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/vk.svg" alt="icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 footer">
+            <div class="mobile-footer-style">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="img/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="footer-nav">
+                <ul>
+                  <li class="mobile"><a href="#">О нас</a></li>
+                  <li><a href="#">Наши правила</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                  <li><a href="#">Уведомления о рисках</a></li>
+                  <li class="mobile"><a href="#">Пользовательское соглашение</a></li>
+                  <li class="mobile"><a href="#">Информация о cookie</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="copyright">© 2007-2019 <a href="#">Fusion Media Limited</a>. Все права зарегистрированы. 18+</p>
+            <div class="footer-info">
+              <div class="footer-toggle-box">
+                <p>Предупреждение о риске: Торговля финансовыми инструментами и (или) криптовалютами сопряжена с
+                  высокими
+                  рисками, включая риск потери части или всей суммы инвестиций, поэтому подходит не всем инвесторам.
+                  Цены
+                  на криптовалюты чрезвычайно волатильны и могут изменяться под действием внешних факторов, таких как
+                  финансовые новости, законодательные решения или политические события. Маржинальная торговля приводит к
+                  повышению финансовых рисков.
+                  Прежде чем принимать решение о совершении сделки с финансовым инструментом или криптовалютами, вы
+                  должны
+                  получить полную информацию о рисках и затратах, связанных с торговлей на финансовых рынках, правильно
+                  оценить цели инвестирования, свой опыт и допустимый уровень риска, а при необходимости обратиться за
+                  профессиональной консультацией.</p>
+                <p>Fusion Media напоминает, что информация, представленная на этом веб-сайте, не всегда актуальна или
+                  точна. Данные и цены на веб-сайте могут быть указаны не официальными представителями рынка или биржи,
+                  а
+                  рядовыми участниками. Это означает, что цены бывают неточны и могут отличаться от фактических цен на
+                  соответствующем рынке, а следовательно, носят ориентировочный характер и не подходят для использования
+                  в
+                  целях торговли. Fusion Media и любой поставщик данных, содержащихся на этом веб-сайте, отказываются от
+                  ответственности за любые потери или убытки, понесенные в результате осуществления торговых сделок,
+                  совершенных с оглядкой на указанную информацию.</p>
+                <p>При отсутствии явно выраженного предварительного письменного согласия компании Fusion Media и (или)
+                  поставщика данных запрещено использовать, хранить, воспроизводить, отображать, изменять, передавать
+                  или
+                  распространять данные, содержащиеся на этом веб-сайте. Все права на интеллектуальную собственность
+                  сохраняются за поставщиками и (или) биржей, которые предоставили указанные данные.
+                  Fusion Media может получать вознаграждение от рекламодателей, упоминаемых на веб-сайте, в случае, если
+                  вы перейдете на сайт рекламодателя, свяжитесь с ним или иным образом отреагируете на рекламное
+                  объявление.</p>
+              </div>
+              <div class="footer-btn-toggle">
+                <img src="img/toggle-arrow.svg" alt="icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

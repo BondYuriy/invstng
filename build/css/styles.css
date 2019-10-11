@@ -1453,6 +1453,162 @@ button:focus {
 	flex: 0 0 77%;
 }
 
+.compare-box {
+	display: flex;
+	padding-bottom: 96px;
+}
+
+.compare-box .table-compare-main tr,
+.compare-box .table-compare-info tr,
+.compare-box .table-compare-info-active tr {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.compare-box .table-compare-main tr th,
+.compare-box .table-compare-main tr td,
+.compare-box .table-compare-info tr th,
+.compare-box .table-compare-info tr td,
+.compare-box .table-compare-info-active tr th,
+.compare-box .table-compare-info-active tr td {
+	width: 100%;
+}
+
+.compare-box .table-compare-main tr th,
+.compare-box .table-compare-info tr th,
+.compare-box .table-compare-info-active tr th {
+	height: 100px;
+}
+
+.compare-box .table-compare-main tr td,
+.compare-box .table-compare-info tr td,
+.compare-box .table-compare-info-active tr td {
+	height: 49px;
+}
+
+.compare-box .table-compare-main tr:last-child,
+.compare-box .table-compare-info tr:last-child,
+.compare-box .table-compare-info-active tr:last-child {
+	border-bottom: 0;
+}
+
+.compare-box .table-compare-main {
+	flex: 0 0 25%;
+	color: #393939;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.compare-box .table-compare-main tr th select,
+.compare-box .table-compare-main tr td select {
+	width: 80%;
+	height: 39px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #393939;
+	border: 1px solid #d2d2d2;
+	padding-left: 10px;
+}
+
+.compare-box .table-compare-main tr th select:focus,
+.compare-box .table-compare-main tr td select:focus {
+	outline: none;
+}
+
+.compare-box .table-compare-info-box {
+	flex: 0 0 75%;
+	display: flex;
+}
+
+.compare-box .table-compare-info-box .table-compare-info,
+.compare-box .table-compare-info-box .table-compare-info-active {
+	flex: 1 1 100%;
+	border-left: 1px solid #e8e8e8;
+}
+
+.compare-box .table-compare-info-box .table-compare-info table,
+.compare-box .table-compare-info-box .table-compare-info-active table {
+	width: 100%;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active tr {
+	height: 49px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th,
+.compare-box .table-compare-info-box .table-compare-info-active td {
+	padding: 0 15px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th {
+	width: 270px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th .compare-name {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th .compare-close {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #8f8f8f;
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th .compare-close span {
+	margin-right: 5px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review,
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review-1,
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review-2,
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review-3 {
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review {
+	line-height: 18px;
+	padding-right: 10px;
+	border-right: 1px solid #000000;
+	margin-right: 7px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review-1 {
+	color: #6cb83d;
+	margin-right: 7px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active td .table-review-3 {
+	color: #d41538;
+	margin-left: 7px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active td .compare-link {
+	font-size: 14px;
+	line-height: 24px;
+	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline;
+	color: #003465;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active td .compare-link:hover {
+	color: #6cb83d;
+}
+
 /* header */
 
 /* ad-unit */
@@ -1474,6 +1630,8 @@ button:focus {
 /* home page */
 
 /* rating page */
+
+/* compare */
 
 @media (min-width: 768px) {
 
@@ -1560,6 +1718,41 @@ button:focus {
 
 .black-list-style .table-rating-info {
 	flex: 0 0 73%;
+}
+
+.compare-box .table-compare-main {
+	background: #ffffff;
+	box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.compare-box .table-compare-main tr th select {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.compare-box .table-compare-info-box {
+	flex: 0 0 65%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.compare-box .table-compare-info-box::-webkit-scrollbar-track {
+	background-color: rgba(202, 212, 229, 0.27) !important;
+}
+
+.compare-box .table-compare-info-box::-webkit-scrollbar {
+	height: 2px !important;
+	background-color: #e3e3e3 !important;
+}
+
+.compare-box .table-compare-info-box::-webkit-scrollbar-thumb {
+	height: 2px !important;
+	background-color: #c6c6c6 !important;
 }
 
 }
@@ -1846,6 +2039,14 @@ button:focus {
 
 .black-list-style .table-rating-info {
 	flex: 0 0 50%;
+}
+
+.compare-box .table-compare-main {
+	flex: 0 0 40%;
+}
+
+.compare-box .table-compare-info-box {
+	flex: 0 0 60%;
 }
 
 }
@@ -2150,6 +2351,22 @@ button:focus {
 
 .black-list-style .table-rating-info {
 	flex: 0 0 45%;
+}
+
+.compare-box .table-compare-main {
+	flex: 0 0 45%;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active {
+	flex: 0 0 65%;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th {
+	width: 175px;
+}
+
+.compare-box .table-compare-info-box .table-compare-info-active th .compare-close span {
+	display: none;
 }
 
 }
