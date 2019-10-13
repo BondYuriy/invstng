@@ -70,3 +70,17 @@
     border-bottom: 1px dashed #6cb83d;
   }
 }
+
+.top-rating-box {
+  & .table tr td {
+    border: 0;
+  }
+
+  & .title-box {
+    padding-bottom: 10px;
+
+    & h3 {
+      font-size: 18px;
+    }
+  }
+}

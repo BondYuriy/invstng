@@ -1,0 +1,11 @@
+.news-list {
+  margin: 24px 0 38px;
+
+  & .news-card {
+    margin-bottom: 14px;
+
+    & .news-card-info .title::before {
+      display: none;
+    }
+  }
+}

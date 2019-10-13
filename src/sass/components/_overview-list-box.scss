@@ -1,0 +1,41 @@
+.overview-list-box {
+  padding: 38px 0 15px 0;
+
+  & .title-box {
+    padding-bottom: 30px;
+
+    & h3 {
+      font-size: 18px;
+    }
+  }
+
+  & .overview-list {
+    & .overview-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 21px;
+
+      & .overview-list-item-img {
+        flex: 0 0 30%;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & p {
+        flex: 0 0 65%;
+        margin: 0;
+        line-height: 16px;
+        color: $table-text-color;
+      }
+
+      &:hover p {
+        color: $green-color;
+      }
+    }
+  }
+}
