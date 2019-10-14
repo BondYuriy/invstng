@@ -435,7 +435,7 @@
   }
 }
 
-/* rating page */
+/* article-box */
 
 @media (max-width: 575px) {
   .article-box {
@@ -511,6 +511,159 @@
   .title-box {
     & .title {
       font-size: 20px;
+    }
+  }
+}
+
+/* broker-item */
+
+@media (max-width: 1199px) {
+  .broker-item .broker-info {
+    & .broker-info-header {
+      & .broker-rating,
+      .broker-reviews,
+      .broker-assessment {
+        flex-direction: column;
+
+        & .name {
+          margin: 0;
+        }
+      }
+    }
+
+    & .broker-info-data {
+      display: block;
+
+      & .negative {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .broker-item {
+    & .date {
+      display: none;
+    }
+
+    & .broker-img {
+      width: 100%;
+    }
+
+    & .broker-info {
+      & .broker-info-header {
+        & .broker-rating,
+        .broker-reviews,
+        .broker-assessment {
+          flex: 0 0 28%;
+          flex-direction: column;
+
+          & .name {
+            min-height: 32px;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            margin-bottom: 7px;
+          }
+
+          & .value,
+          .value-1,
+          .value-2,
+          .value-3 {
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      & .broker-info-data {
+        display: none;
+      }
+
+      & .broker-info-table {
+        margin-bottom: 40px;
+
+        & .table {
+          & tr {
+            height: 48px;
+
+            &:nth-child(1) {
+              & td {
+                border: 0;
+              }
+            }
+
+            &:nth-child(2) {
+              & td {
+                border-top: 1px solid #dee2e6;
+              }
+            }
+
+            & td {
+              height: 40px;
+              font-size: 12px;
+
+              &:first-child {
+                font-size: 14px;
+                line-height: 20px;
+              }
+
+              & a {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      & .article-box {
+        border: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .feedback-box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+  }
+
+  .feedback-form {
+    padding-bottom: 80px;
+
+    & form {
+      & .input-box {
+        display: block;
+
+        & input {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px;
+
+          &::placeholder {
+            font-size: 12px;
+          }
+
+          &::-webkit-input-placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+
+      & .textarea-box {
+        & textarea {
+          &::placeholder {
+            font-size: 12px;
+          }
+
+          &::-webkit-input-placeholder {
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 }
@@ -640,6 +793,95 @@
       & .news-card .news-card-img {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+}
+
+/* overview-list */
+
+@media (min-width: 1200px) {
+  .overview-list .news-card {
+    padding: 0;
+    box-shadow: none;
+    border: 1px solid #eaeaea;
+
+    & .news-card-img .stickers {
+      left: 10px;
+      top: 10px;
+    }
+
+    & .news-card-info {
+      padding: 0 15px;
+
+      & .title::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(1) {
+      flex: 0 0 100%;
+
+      & .news-card-img {
+        height: 280px;
+      }
+    }
+
+    &:nth-child(6) {
+      flex: 0 0 100%;
+
+      & .news-card-img {
+        height: 280px;
+      }
+    }
+
+    & .border-hover {
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0);
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+
+      & .news-card-btn {
+        display: block;
+      }
+
+      & .border-hover {
+        background: linear-gradient(300.5deg, #0bd467 33.58%, #0bd4d4 61.84%)
+          100% 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .overview-list {
+    padding: 30px 0 58px 0;
+
+    & .news-card {
+      flex: 0 0 100%;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 30px;
+      padding: 12px 12px 26px 12px;
+
+      & .news-card-img .stickers {
+        left: 6px;
+        top: 5px;
+      }
+
+      & .news-card-info {
+        padding: 0;
+
+        & .title::before {
+          display: none;
+        }
       }
     }
   }

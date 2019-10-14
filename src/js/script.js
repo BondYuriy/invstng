@@ -70,4 +70,9 @@ $(document).ready(function() {
       .prev(".footer-toggle-box")
       .toggleClass("show");
   });
+
+  $(".broker-btn-show").click(function() {
+    $(this).addClass("hidden");
+    $(".article-box").addClass("show");
+  });
 });

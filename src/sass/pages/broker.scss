@@ -1,0 +1,220 @@
+.broker-item {
+  margin-bottom: 100px;
+
+  & .broker-img {
+    width: 80%;
+    margin: 40px auto 40px auto;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .broker-info {
+    & .broker-info-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 41px;
+
+      & .broker-rating,
+      .broker-reviews,
+      .broker-assessment {
+        display: flex;
+        align-items: center;
+
+        & .name {
+          font-size: 16px;
+          color: $table-text-color;
+          margin-right: 20px;
+        }
+
+        & .value {
+          font-weight: $Medium;
+          font-size: 24px;
+          line-height: 28px;
+          color: $table-text-color;
+        }
+
+        & .value-1,
+        .value-2,
+        .value-3 {
+          font-weight: $Medium;
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        & .value-1 {
+          color: $green-color;
+          margin-right: 10px;
+        }
+
+        & .value-2 {
+          color: $table-text-color;
+          margin-right: 10px;
+        }
+
+        & .value-3 {
+          color: #d51538;
+        }
+      }
+    }
+
+    & .broker-info-data {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+      padding: 34px 30px;
+      margin-bottom: 30px;
+
+      & .negative,
+      .positive {
+        flex: 0 0 49%;
+
+        & .title {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+
+          & img {
+            margin-right: 10px;
+          }
+        }
+
+        & ul {
+          padding-left: 30px;
+
+          & li {
+            margin-bottom: 25px;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    & .broker-info-table {
+      margin-bottom: 40px;
+
+      & .table {
+        & tr {
+          height: 48px;
+
+          &:nth-child(1) {
+            & td {
+              border: 0;
+            }
+          }
+
+          &:nth-child(2) {
+            & td {
+              border-top: 1px solid #dee2e6;
+            }
+          }
+
+          & td {
+            height: 48px;
+            text-align: left;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: $table-text-color;
+
+            &:first-child {
+              font-weight: $Medium;
+              font-size: 16px;
+              line-height: 24px;
+              color: $table-text-color;
+            }
+
+            & a {
+              font-size: 14px;
+              line-height: 24px;
+              text-decoration-line: underline;
+              color: #003465;
+
+              &:hover {
+                color: $green-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .article-box {
+      display: none;
+    }
+
+    & .hidden {
+      display: none;
+    }
+
+    & .show {
+      display: block;
+    }
+  }
+}
+
+.feedback-box {
+  margin-bottom: 70px;
+
+  & .feedback-card {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & .feedback-card-header {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.feedback-form {
+  padding-bottom: 40px;
+
+  & form {
+    & .input-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 38px;
+
+      & input {
+        border: 0;
+        flex: 0 0 40%;
+        border-bottom: 1px solid #d5d5d5;
+      }
+    }
+
+    & .textarea-box {
+      margin-bottom: 42px;
+
+      & label {
+        display: block;
+        font-size: 12px;
+        line-height: 14px;
+        color: #acacac;
+      }
+
+      & textarea {
+        border: 0;
+        display: block;
+        width: 100%;
+        height: 80px;
+        border-bottom: 1px solid #d5d5d5;
+        resize: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
