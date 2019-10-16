@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header page-style">
     <div class="header-main-box">
       <div class="container">
         <div class="row">
@@ -23,13 +23,20 @@
                   <img src="img/logo.svg" alt="logo" />
                 </a>
               </div>
-
-              <form action="#" class="search">
-                <input placeholder="Поиск по сайту" type="text" />
-                <button type="submit" class="btn-search">
-                  <img src="img/search.svg" alt="icon">
-                </button>
-              </form>
+              <div class="search">
+                <a class="btn-search-toggle">
+                  <div class="open-form">
+                    <img src="img/search.svg" alt="icon">
+                  </div>
+                </a>
+                <div class="search-toggle">
+                  <input placeholder="Поиск по сайту" type="text" />
+                  <button type="submit" class="wpcf7-submit btn-search">
+                    <img src="img/search.svg" alt="icon">
+                  </button>
+                  <a class="close-form btn-search-toggle">&#10005;</a>
+                </div>
+              </div>
               <div class="user-option">
                 <a href="#" class="personal-area">
                   <img src="img/man-user.svg" alt="icon">
@@ -69,6 +76,7 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link">Рейтинги брокеров</a>
+                      <img src="img/arrow-nav.svg" alt="icon" class="arrow-nav">
                       <ul class="sub-nav">
                         <li>
                           <a href="rating.html">Форекс брокеры</a>
@@ -80,23 +88,24 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link">Черные списки брокеров</a>
+                      <img src="img/arrow-nav.svg" alt="icon" class="arrow-nav">
                       <ul class="sub-nav">
                         <li>
                           <a href="black-list.html">Черные списки Форекс брокеров</a>
                         </li>
                         <li>
-                          <a href="rating-2.html">Черные списки Бинарныx брокеров</a>
+                          <a href="#">Черные списки Бинарныx брокеров</a>
                         </li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="compare.html">Сравнение брокеров</a>
+                      <a class="nav-link" href="#">Сравнение брокеров</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="news.html">Новости</a>
+                      <a class="nav-link" href="#">Новости</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="overview.html">Обзоры и статьи</a>
+                      <a class="nav-link" href="#">Обзоры и статьи</a>
                     </li>
                   </ul>
                 </div>

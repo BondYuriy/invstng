@@ -1,0 +1,59 @@
+.search {
+  display: flex;
+  align-items: center;
+
+  & .btn-search-toggle {
+    display: none;
+
+    & .open-form {
+      height: 25px;
+    }
+  }
+
+  & .search-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    & input[type="text"] {
+      display: block;
+      width: 100%;
+      border: 0;
+      background-color: rgba(0, 0, 0, 0);
+      height: 34px;
+      border-bottom: 1px solid #858585;
+      color: $white-color;
+      padding: 0 20px 0 0;
+
+      &::placeholder {
+        color: #868686;
+      }
+
+      &:focus {
+        border-bottom: 1px solid $green-color;
+      }
+    }
+
+    .wpcf7-submit {
+      border: 0;
+      flex: 0 0 56px;
+      height: 34px;
+      background: linear-gradient(109.52deg, #0bd367 16.86%, #0bd3d3 87.76%);
+      box-shadow: 0px 0px 50px rgba(11, 211, 211, 0.5);
+      border-radius: 50px;
+      margin-left: -13px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    & .close-form {
+      display: none;
+      color: #b9b9b9;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+}

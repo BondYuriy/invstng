@@ -63,7 +63,7 @@ $(document).ready(function() {
     }
   });
 
-  /* */
+  /* footer */
 
   $(".footer-btn-toggle").click(function() {
     $(this)
@@ -74,5 +74,12 @@ $(document).ready(function() {
   $(".broker-btn-show").click(function() {
     $(this).addClass("hidden");
     $(".article-box").addClass("show");
+  });
+
+  /* search */
+
+  $(".btn-search-toggle").click(function() {
+    $(".search-toggle").toggleClass("open");
+    $(".close-form").toggleClass("show");
   });
 });
